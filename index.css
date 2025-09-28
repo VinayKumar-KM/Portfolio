@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #09122c;
+  --text-color: rgb(39, 69, 161);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(30deg, #090d19, #09122c, #09122c, #2b3a69);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home > .home1 {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(30deg, #090d19, #09122c, #09122c, #2b3a69);
+}
+
+.home > .home1 > .text {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.home > .explore {
+  height: 20%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  height: 60px;
+  width: 300px;
+  background-color: #2245af;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn > a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.009);
+  box-shadow: 0 0 20px rgba(228, 225, 225, 0.5);
+}
+
+.navigation {
+  width: 100%;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgb(134, 80, 185);
+}
+
+.navigation > header {
+  height: 50px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+}
+
+.navigation > .container {
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+}
+
+header > a {
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.navigation > .about {
+  background-color: rgb(134, 80, 185);
+  display: flex;
+  .rightabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    button {
+      height: 50px;
+      width: 200px;
+      border-radius: 20px;
+      background-color: #2b3a69;
+      border: none;
+      margin-top: 50px;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.navigation > .skills {
+  background-color: rgb(159, 104, 210);
+}
+
+.skillcontent {
+  display: flex;
+  gap: 50px;
+  width: 95%;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+.skillbox {
+  width: 20%;
+  height: 350px;
+  border-radius: 20px;
+  background-color: rgb(210, 178, 241);
+}
+
+.skillbox > .boxhead {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(99, 61, 136);
+  height: 50px;
+  h1 {
+    color: white;
+  }
+}
+
+.skillbox > .boxcontent {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+
+  img {
+    width: 18%;
+  }
+
+  h3 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 22px;
+  }
+}
+
+.skillbox:hover {
+  transform: scale(1.009);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.navigation > .work {
+  background-color: rgb(166, 118, 211);
+}
+
+.projectcontainer1 {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.projectcontainer1 > .projects {
+  width: 25%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-left: 100px;
+  img {
+    width: 98%;
+    margin-top: 5px;
+    margin-left: 4px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  h2 {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+  p {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  a {
+    img {
+      width: 10%;
+      margin-left: 10px;
+    }
+  }
+}
+
+.projects:hover {
+  transform: scale(1.009);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.navigation > .contact {
+  background-color: rgb(186, 151, 218);
+}
+
+.contactcont {
+  display: flex;
+}
+
+.contactcont > .rightcont {
+  .headlines {
+    width: 95%;
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    flex-direction: column;
+  }
+}
+
+.rightcont > .contactlab {
+  margin-left: 150px;
+  margin-top: 20px;
+  h2{
+    margin-top: 15px;
+  }
+  input {
+    width: 400px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: #090d19;
+    font-size: 25px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-weight: 600;
+    background-color: rgb(215, 205, 225);
+  }
+  textarea{
+    border-radius: 20px;
+    border: none;
+    color: #090d19;
+    font-size: 25px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-weight: 600;
+    background-color: rgb(215, 205, 225);
+    margin-top: 10px;
+  }
+  button{
+    display: block;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+    font-weight: 600;
+    margin-left: 150px;
+    color: #2b3a69;
+    background-color: rgb(188, 169, 208);
+  }
+}
+
+.bottom{
+  margin-left: 100px;
+  a{
+    text-decoration: none;
+    color: #2245af;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+/* Mobile device */
+
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    height: 100lvh;
+  }
+
+  .home > .home1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navigation > header {
+    width: 100%;
+  }
+}
